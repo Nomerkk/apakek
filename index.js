@@ -19,5 +19,6 @@ client.on("ready", async () => {
               });
             }, 600)
           });
+require("./uptime.js")();
 client.login(process.env.TOKEN)
 
