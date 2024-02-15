@@ -3,6 +3,7 @@ const request = require("request");
 const config = require("./config.json");
 const STATUS_URL = "https://discordapp.com/api/v8/users/@me/settings";
 require('dotenv').config()
+require("./Uptime.js")();
 const client = new Discord.Client({
   checkUpdate: false,
     ws: {
