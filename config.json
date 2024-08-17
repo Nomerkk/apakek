@@ -1,40 +1,32 @@
 {
     "animation": [
         {
-            "text": "Girl you know you're perfect from",
-            "timeout": 5000
+            "text": "She can get whatever she want",
+            "timeout": 4000
         },
         {
-            "text": "Your head down to your heels",
-            "timeout": 5000
+            "text": "She can get that new Saint Laurent",
+            "timeout": 4000
         },
         {
-            "text": "Don't be confused by my smile",
-            "timeout": 5000
+            "text": "I could put that Rollie on her arm",
+            "timeout": 4000
         },
         {
-            "text": "'Cause I ain't ever been more for real, for real",
-            "timeout": 5000
+            "text": "And I can get the bracelet with the charm",
+            "timeout": 4000
         },
         {
-            "text": "So just turn down the lights, And close the door",
-            "timeout": 5000
+            "text": "I found you",
+            "timeout": 4000
         },
         {
-            "text": "Oooh I love that dress But you won't need it anymore",
-            "timeout": 5000
+            "text": "Girl, I like being around you",
+            "timeout": 4000
         },
         {
-            "text": "No you won't need it no more",
-            "timeout": 5000
-        },
-        {
-            "text": "Let's just kiss 'til we're naked, baby",
-            "timeout": 5000
-        },
-        {
-            "text": "Versace on the floor",
-            "timeout": 5000
+            "text": "Feel like Kanye, I'm Bound 2",
+            "timeout": 4000
         }
     ]
 }
