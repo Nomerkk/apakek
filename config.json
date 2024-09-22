@@ -1,31 +1,27 @@
 {
     "animation": [
         {
-            "text": "She can get whatever she want",
+            "text": "Let me show you how proud I am to be yours",
             "timeout": 4000
         },
         {
-            "text": "She can get that new Saint Laurent",
+            "text": "Leave this dress a mess on the floor",
             "timeout": 4000
         },
         {
-            "text": "I could put that Rollie on her arm",
+            "text": "Still look good for you, good for you, oh-oh, oh-oh, oh",
             "timeout": 4000
         },
         {
-            "text": "And I can get the bracelet with the charm",
+            "text": "We don't gotta be in love, no",
             "timeout": 4000
         },
         {
-            "text": "I found you",
+            "text": "I don't gotta be the one, no",
             "timeout": 4000
         },
         {
-            "text": "Girl, I like being around you",
-            "timeout": 4000
-        },
-        {
-            "text": "Feel like Kanye, I'm Bound 2",
+            "text": "I just wanna be one of your girls Tonight",
             "timeout": 4000
         }
     ]
