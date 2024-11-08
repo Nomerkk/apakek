@@ -14,19 +14,27 @@ client.on("ready", async () => {
   console.log(`✅ ${client.user.username} Summoned`);
   client.user.setPresence({ status: 'idle' });
 
-  const { joinVoiceChannel } = require('@discordjs/voice');
-  const channel = client.channels.cache.get("115543743051047324");
-  if (!channel) return console.log("The channel does not exist!");
+  // Join the voice channel only once
+  try {
+    const { joinVoiceChannel } = require('@discordjs/voice');
+    const channel = client.channels.cache.get("115543743051047324");
+    if (!channel) {
+      console.log("The channel does not exist!");
+      return;
+    }
 
-  const connection = joinVoiceChannel({
-    channelId: channel.id,
-    guildId: channel.guild.id,
-    adapterCreator: channel.guild.voiceAdapterCreator,
-    selfDeaf: true,
-    selfMute: false
-  });
-  
-  console.log("Connected to voice channel");
+    const connection = joinVoiceChannel({
+      channelId: channel.id,
+      guildId: channel.guild.id,
+      adapterCreator: channel.guild.voiceAdapterCreator,
+      selfDeaf: true,
+      selfMute: false
+    });
+
+    console.log("Connected to voice channel");
+  } catch (error) {
+    console.error("Error connecting to voice channel:", error);
+  }
 });
 
 // Loop function to change Discord status
@@ -39,7 +47,7 @@ async function loop() {
       console.error(error);
     }
   }
-  setTimeout(loop, 1000); // Avoid stack overflow by not using recursion
+  setTimeout(loop, 1000); // Restart the animation loop after a delay
 }
 
 // Send request to change status
@@ -61,7 +69,7 @@ async function doRequest(text, emojiID = null, emojiName = null) {
       throw new Error("Invalid Status Code: " + response.status);
     }
   } catch (error) {
-    throw error;
+    console.error("Error updating status:", error);
   }
 }
 
